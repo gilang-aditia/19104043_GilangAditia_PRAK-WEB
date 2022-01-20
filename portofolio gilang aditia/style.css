@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html {
+    background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+p{
+    margin-top: 10px;
+    font-size: 0,8em;
+    text-align: justify;
+    letter-spacing: 2px;
+}
+header{
+    margin-top: -50px;
+    width: 80%;
+    display: grid;
+    grid-template-areas:
+    "profile profile"
+    "intro intro"
+    "story skill"
+    "edu lang";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 50px 30px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.profile-img {
+    margin-top: 90px;
+    background-image: url(img/profile.png);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    grid-area: profile;
+    justify-self: center;
+    border: 2px solid white;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    transition: all 400ms ease;
+}
+.profile-img:hover{
+    filter: blur(2px);
+    cursor: not-allowed;
+    transform: scale(0.9);
+}
+.panel-intro{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    grid-area: intro;
+    justify-self: center;
+    color: #ecf0f1;
+    
+}
+.panel-intro .intro1{
+    font-size: 2em;
+}
+.panel-intro .intro2{
+    font-size: 1.5em;
+    text-align: center;
+}
+.story{
+    grid-area: story;
+}
+.skill{
+    grid-area: skill;
+}
+.story,
+.language{
+    box-shadow: 0 0 10px rgba(250, 250, 250, 0.7);
+    padding: 20px;
+    color: white;
+    background-color: #2c3e50;
+    border-radius: 20px;
+}
+.skill,
+.education{
+    box-shadow: 0 0 10px rgba(250, 250, 250, 0.7);
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 20px;
+}
+.education{
+    grid-area: edu;
+}
+.language{
+    grid-area: lang;
+}
+.story:hover,
+.language:hover,
+.education:hover,
+.skill:hover{
+    transform: scale(0.95);
+}
+.story,
+.language,
+.education,
+.skill{
+    transition: all 800ms ease;
+}
+.story,
+.language,
+.education,
+.skill{
+    cursor: not-allowed;
+}
