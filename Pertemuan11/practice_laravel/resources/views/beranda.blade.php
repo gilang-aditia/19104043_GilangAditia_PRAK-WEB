@@ -2,6 +2,6 @@
 
 @section('content')
     <h1>
-        Ananda Aulia Rizky
+        Gilang Aditia
     </h1>
 @endsection
